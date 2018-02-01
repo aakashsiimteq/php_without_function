@@ -10,5 +10,7 @@
   // printing the value of the array
   print_r(array_values($array));
 
+  //print_r(array_reverse($array));
+
 
  ?>
