@@ -4,7 +4,7 @@
     '2' => 'mouse',
     '3' => 'cat'
   );
-  $search = 'cat';
+  $search = 'rat';
 
  // // implementation with in_array functionality
  //  if (in_array($search,$inArray)) {
@@ -16,11 +16,10 @@
 // implementation with out any pre defined function
 $i = 0;
 foreach ($inArray as $key) {
-  if ($key == $search) {
-    echo "Found from manual \n";
-    break;
-  }else {
-    echo "Not found from manual \n";
-    break;
-  }
+  $found = ($key == $search) ? 1 : 0;
+}
+if ($found == 1) {
+  echo "found";
+}else {
+  echo "not found";
 }
